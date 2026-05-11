@@ -1,11 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document rrrrrr</title>
-</head>
+<!DOCTYPE html> <!-- Indica que es un documento Html, sin ello se interpretaria como código antiguo antes de los 90's Quirks mode,
+aparecerian codigos antiguos -->
+<html lang="es" > <!-- idioma-->
+
+<!--invoca al archivo style.css que contiene todas las configuraciones de estilos de
+la página-->
+<link rel="stylesheet" href="styles.css">
+
+<!--Encabezado, el valor atributo id invoca a una funcion del archivo style.css para
+dar el formato del menu-->
+<header id="mi-encabezado">
+
+<title>Diseño de arquitectura de software</title>
+<!--Creacion del menú utilizando Nav-->
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="about.html">Acerca de </a></li>
+<li><a href="contact.html">Contacto</a></li>
+</ul>
+</nav>
+
+<!--Texto del encabezado-->
+<h1>Diseño de arquitectura de software</h1>
+<p>Bienvenidos</p>
+
+</header>
+
+<!--Cuerpo del HTML. Las configuraciones de estilos se encuentran en el archivo
+style.css-->
 <body>
-    
+
+<main>
+<!--*CONFIGURACION DEL TEXTO EN EL CUERPO. El tamaño y tipo de letra
+estan especificados en el archivo style.css*-->
+<section class="contenido">
+<h2> <span style="background-color: rgb(208, 209, 245);" ;>¿Qué es la arquitectura de software?</span></h2>
+<tr><td> <hr>
+</hr>
+<p>
+La arquitectura de software es la organizacion fundamental de un sistema de sofware, que abarca las
+estructuras, los componentes y las relaciones que definen su funcionamiento y evolución. En esencia,
+la arquitectura </p>
+<p>
+La importancia de la arquitectura de software va mucho mas alla del diseño inicial: es un factor decisivo
+para el éxito general de unn sistema de software. Una arquitectura bien diseñada influye directamente
+en el rendimiento, la fiabilidad y la mantenibilidad del sistema, facilitando a los equipos de desarrollo
+la gestion de la complejidad y la entrega de resultados de alta calidad</p>
+</td></tr>
+
+</section>
+</main>
+
+<!--Pie de pagina-->
+<!--el atributo Class="footer" invoca a una funcion del archivo style.css para dar
+el formato del pie de pagina-->
+<div class="footer">Derechos reservados © 2026 Genesis Valeria </div>
+
+<!--Invoca al archivo script.js que contiene la funcion que controla el
+comportamiento del menu-->
+
+<script src="script.js"></script>
+<!--Probar commit-repositorios-->
+
 </body>
 </html>
