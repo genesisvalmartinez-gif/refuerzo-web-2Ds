@@ -64,22 +64,24 @@ a:hover {
 color: #ff9900; /* Cambia el color al pasar el mouse por encima */
 }
 
-/*CONFIGURACION DEL BODY*/
 body {
-/*configura los margenes de la página*/
-margin-top: 0px; /* Ajusta según la altura del menú */
-margin-left: 0px;
-margin-right: 0px;
-font-family: Arial, Helvetica, sans-serif;
+ /*CONFIGURACION DEL BODY*/
+ margin-top: 0px; 
+ margin-left: 50px;  /* Cambia el 0 por 50 */
+ margin-right: 50px; /* Cambia el 0 por 50 */
+ font-family: Arial, Helvetica, sans-serif;
 }
 
 /*CONFIGURACION DEL CONTENIDO*/
 .contenido {
-    color: #000000;
-    font-size: 20px;
-    padding: 5% 10%; /* El primer valor es arriba/abajo, el segundo izquierda/derecha */
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
+/* configura el color, tamaño de fuente y alineación del texto en el cuerpo de la
+página */
+color: #000000;
+font-size: 20px;
+padding: 5%;
+text-align:justify;
+
+font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer {
