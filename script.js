@@ -1,17 +1,17 @@
+// Selecciona el menú y el encabezado del html y Style.css
 const menu = document.querySelector("nav");
 const header = document.querySelector("#mi-encabezado");
 
-// Solo ejecutamos si ambos existen en la página actual
-if (menu && header) {
-    window.addEventListener("scroll", () => {
-        const headerHeight = header.offsetHeight;
-        
-        if (window.scrollY > headerHeight) {
-            // Azul oscuro
-            menu.style.backgroundColor = "rgb(5, 43, 150)"; 
-        } else {
-            // Transparente
-            menu.style.backgroundColor = "rgba(0, 0, 0, 0)"; 
-        }
-    });
+// Obtén la altura del encabezado
+const headerHeight = header.offsetHeight;
+
+// Función que cambia el color de fondo del menú cuando se desplaza
+window.addEventListener("scroll", () => {
+if (window.scrollY > headerHeight) {
+menu.style.backgroundColor = "rgb(102, 163, 179)"; // Cambia el color de fondo a
+azul
+} else {
+menu.style.backgroundColor = "rgba(0, 0, 0, 0)"; // Vuelve al fondo
+transparente
 }
+});
