@@ -2,12 +2,12 @@
 
 /* Establece una imagen de fondo para el encabezado */
 #mi-encabezado {
-background-image: url(https://img.freepik.com/foto-gratis/vista-configuracion-teclado-controlador-juegos-neon-iluminados_23-2149529367.jpg?semt=ais_hybrid&w=740&q=80); 
+background-image: url('imagenes/Imagen1.png');
 background-size: cover; /* Ayuda ajustar  la imagen para cbrir todo el fondo*/
 background-position: center; /* Centra la imagen en el encabezado */
 height: 35rem; /* Altura del encabezado (ajusta según tus necesidades) */
 
-color: #ffffff; /* Color del texto en el encabezado para asegurar la legibilidad */
+color: #f7c6c6; /* Color del texto en el encabezado para asegurar la legibilidad */
 text-orientation: upright;
 text-align: center; /* Alinea el contenido al centro del encabezado */
 padding: 20px; /* Espacio de relleno interno para el contenido */
@@ -27,17 +27,16 @@ font-size: 25px; /* Tamaño de fuente del texto del encabezado */
 
 /*CONFIGURACION DEL MENU*/
 
-/* Establece el fondo transparente para el menú */
 nav {
-background-color: rgba(255, 255, 255, 0);
-padding: 20px;
-position: fixed; /* Posiciona el menú en la parte superior de la página */
-top: 0;
-left: 0;
-width: 100%;
-transition: background-color 0.5s; /* Transición suave para el cambio de color de
-fondo */
-
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* AÑADE ESTO: Asegura que el menú siempre esté por encima de las imágenes */
+    box-sizing: border-box; /* AÑADE ESTO: Evita que el padding haga que el menú sea más ancho que la pantalla */
+    transition: background-color 0.5s;
 }
 
 /* Estilos para los elementos menu*/
@@ -55,7 +54,7 @@ margin-right: 30px; /* Espacio entre elementos del menú */
 
 a {
 text-decoration: none;
-color: #fffdfd; /* Color del texto del menú */
+color: #beaaaa; /* Color del texto del menú */
 font-weight: bold;
 }
 
@@ -66,23 +65,14 @@ color: #ff9900; /* Cambia el color al pasar el mouse por encima */
 
 /*CONFIGURACION DEL BODY*/
 body {
-/*configura los margenes de la página*/
-margin-top: 0px; /* Ajusta según la altura del menú */
-margin-left: 0px;
-margin-right: 0px;
-font-family: Arial, Helvetica, sans-serif;
-}
-
-/*CONFIGURACION DEL CONTENIDO*/
-.contenido {
-/* configura el color, tamaño de fuente y alineación del texto en el cuerpo de la
-página */
-color: #000000;
-font-size: 20px;
-padding: 5%;
-text-align:justify;
-
-font-family: Arial, Helvetica, sans-serif;
+    /* Configura los margenes de la página */
+    margin-top: 0px;      /* Se mantiene en 0 para que el menú pegue arriba */
+    margin-left: 5%;     /* Añade un 5% de espacio a la izquierda */
+    margin-right: 5%;    /* Añade un 5% de espacio a la derecha */
+    margin-bottom: 20px; /* Un poco de espacio al final de la página */
+    
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4; /* Opcional: un color gris muy claro de fondo ayuda a ver el margen */
 }
 
 .footer {
